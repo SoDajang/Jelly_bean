@@ -7,7 +7,7 @@
 
 한 두 문단으로 프로젝트 소개 글을 작성합니다.
 
-![](https://github.com/SoDajang/Jelly_bean/issues/1#issue-1839421070)
+<img src="https://github.com/SoDajang/Jelly_bean/issues/1#issue-1839421070">
 
 
 1<div style="text-align: left;">
