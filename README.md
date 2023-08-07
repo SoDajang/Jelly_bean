@@ -15,7 +15,16 @@
 <div style="text-align: left;">
 <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 안녕하세요. 젤리빈입니다. </h2>
 <div style="font-weight: 700; font-size: 15px; text-align: left; color: #282d33;">
+
+  ## Color
+Change Background Image!
+- `&color=auto` : Proven random color. List are [here](https://github.com/kyechan99/capsule-render/blob/master/src/pallete.json)
+- `&color=timeAuto` : Proven random color, but is decided by time.
+- `&color=random` : Really random color. I don't know what colors are showing.
+- `&color=gradient` : Proven random gradient. List are [here](https://github.com/kyechan99/capsule-render/blob/master/src/gradient.json)
+- `&color=timeGradient` : Proven random gradient, but is decided by time.
 - `&color=_hexcode` : default(#B897FF)
+- `&color=_custom_gradient` : Custom gradient. If write as `&color=0:EEFF00,100:a82da8`,
   <li>[Back-end] 다희, 하늘 </div>
   <li>[Front] 현욱 </div>
   <li>[Full-stack] 동현 </div>
