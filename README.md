@@ -1,14 +1,3 @@
-# 웹사이트 구축
-> 천재교육 디지털러닝팀 공식 웹사이트 구축
-
-<li>과제목적</li><br>
-
-<p>해당 사이트는 디지털러닝팀에서 제공하는 K-Digital Training (KDT) 프로그램의 프로그램 소개, 문의, 지원 등 
-해당 사이트를 통해서 천재교육 디지털러닝팀에서 제공하는 서비스 통합 제공 및 천재교육의 IT 교육에 대한 
-이미지를 재고하는 것을 목적으로 가진다.</p>
-
-<li>페르소나</li><br>
-주 이용자: 20~30대이며 빅데이터, 풀스택 개발, PM(프로덕트 매니저) 등에 관심이 있으나, 전문가 수준이 아닌 사람을 대상으로 한다.
 
 ![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=300&section=header&text=Jelly%20bean&fontSize=90&animation=fadeIn&fontAlignY=38&desc=%20Profile%20or%20any%20Repo%20like%20me!&descAlignY=51&descAlign=62)
 
@@ -23,6 +12,17 @@
 - `Product Manager` : 소현
 - `bot` : default(#B897FF)
 
+# 웹사이트 구축
+> 천재교육 디지털러닝팀 공식 웹사이트 구축
+
+<li>과제목적</li><br>
+
+<p>해당 사이트는 디지털러닝팀에서 제공하는 K-Digital Training (KDT) 프로그램의 프로그램 소개, 문의, 지원 등 
+해당 사이트를 통해서 천재교육 디지털러닝팀에서 제공하는 서비스 통합 제공 및 천재교육의 IT 교육에 대한 
+이미지를 재고하는 것을 목적으로 가진다.</p>
+
+<li>페르소나</li><br>
+주 이용자: 20~30대이며 빅데이터, 풀스택 개발, PM(프로덕트 매니저) 등에 관심이 있으나, 전문가 수준이 아닌 사람을 대상으로 한다.
 
 ![jelly](https://github.com/SoDajang/Jelly_bean/assets/136549638/65f92957-b802-460f-9f56-ab9a060332a1)
 
