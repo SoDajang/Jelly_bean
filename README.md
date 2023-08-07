@@ -14,7 +14,7 @@
 
 </br>
 
-<h2> 🥜PROJECT </h2>
+<h2> 🥜Project </h2>
 > 천재교육 디지털러닝팀 공식 웹사이트 구축
 
 <li>과제목적</li><br>
@@ -27,6 +27,7 @@
 주 이용자: 20~30대이며 빅데이터, 풀스택 개발, PM(프로덕트 매니저) 등에 관심이 있으나, 전문가 수준이 아닌 사람을 대상으로 한다.
 
 ![jelly](https://github.com/SoDajang/Jelly_bean/assets/136549638/65f92957-b802-460f-9f56-ab9a060332a1)
+
 
 <div>
 ## Getting Started
@@ -42,6 +43,14 @@ pnpm dev
 ```
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+</div>
+<div>
+## Page Description
+### Main
+> Description
+사진을 넣으면 좋겠다고 생각하고 있습니다.
+
+</br>
 </div>
 
 <div style="text-align: left;">
@@ -66,8 +75,3 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 /> <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Jellybean&layout=compact&bg_color=180,fffbb9,00000000&title_color=000000&text_color=000000"
 /> </div>
 </div>
-
-## Page Description
-### Main
-> Description
-사진을 넣으면 좋겠다고 생각하고 있습니다.
