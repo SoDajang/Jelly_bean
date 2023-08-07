@@ -1,13 +1,15 @@
 # 웹사이트 구축
 > 천재교육 디지털러닝팀 공식 웹사이트 구축
 
-![jelly](https://github.com/SoDajang/Jelly_bean/assets/136549638/65f92957-b802-460f-9f56-ab9a060332a1)
-
+##과제 목적
+해당 사이트는 디지털러닝팀에서 제공하는 K-Digital Training (KDT) 프로그램의 지원(프로그램 소개, 문의, 지원) 및 기술블로그 컨텐츠 제공, 코딩 교육 플랫폼,강의실 예약 서비스의 4가지 분류로 서비스를 제공하고자 한다. 해당 사이트를 통해서 천재교육 디지털러닝팀에서 제공하는 서비스 통합 제공 및 천재교육의 IT 교육에 대한 이미지를 재고하는 것을 목적으로 가진다.
 
 
 <div style="text-align: left;">
 <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 안녕하세요. 젤리빈입니다. </h2>
 <div style="font-weight: 700; font-size: 15px; text-align: left; color: #282d33;"> <li> 천재 </div>
+
+![jelly](https://github.com/SoDajang/Jelly_bean/assets/136549638/65f92957-b802-460f-9f56-ab9a060332a1)
 
 <div>
 ## Getting Started
