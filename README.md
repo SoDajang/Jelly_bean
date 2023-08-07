@@ -16,7 +16,7 @@
 <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 안녕하세요. 젤리빈입니다. </h2>
 <div style="font-weight: 700; font-size: 15px; text-align: left; color: #282d33;">
 
-- `&color=auto` : Proven random color. List are [here](https://github.com/kyechan99/capsule-render/blob/master/src/pallete.json)
+- `&color=Backend` : 다희(https://github.com/kyechan99/capsule-render/blob/master/src/pallete.json)
 - `&color=timeAuto` : Proven random color, but is decided by time.
 - `&color=random` : Really random color. I don't know what colors are showing.
 - `&color=gradient` : Proven random gradient. List are [here](https://github.com/kyechan99/capsule-render/blob/master/src/gradient.json)
