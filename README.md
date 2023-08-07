@@ -13,7 +13,7 @@
 주 이용자: 20~30대이며 빅데이터, 풀스택 개발, PM(프로덕트 매니저) 등에 관심이 있으나, 전문가 수준이 아닌 사람을 대상으로 한다.
 
 <div style="text-align: left;">
-<h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 안녕하세요. 젤리빈입니다. </h2>
+<h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 🥜안녕하세요. 젤리빈입니다. </h2>
 <div style="font-weight: 700; font-size: 15px; text-align: left; color: #282d33;">
 
 - `Backend` : 다희
