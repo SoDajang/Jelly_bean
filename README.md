@@ -68,4 +68,4 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ## Page Description
 ### Main
 > Description
-작성을 하는데 왜 안보이지
+사진을 넣으면 좋겠다고 생각하고 있습니다.
