@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=300&section=header&text=Jelly%20bean&fontSize=90&animation=fadeIn&fontAlignY=38&desc=%30GitHub%20Profile%20or%20any%20Repo%20like%20me!&descAlignY=51&descAlign=62)
+![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=300&section=header&text=Jelly%20bean&fontSize=90&animation=fadeIn&fontAlignY=38&desc=%50GitHub%20Profile%20or%20any%20Repo%20like%20me!&descAlignY=51&descAlign=62)
 
 # 웹사이트 구축
 > 천재교육 디지털러닝팀 공식 웹사이트 구축
