@@ -1,4 +1,19 @@
-<div style="text-align: left;">
+# 웹사이트 구축
+> 천재 IT 교육센터 웹페이지 제작 
+
+[![NPM Version][npm-image]][npm-url]
+[![Build Status][travis-image]][travis-url]
+[![Downloads Stats][npm-downloads]][npm-url]
+
+한 두 문단으로 프로젝트 소개 글을 작성합니다.
+
+![](../header.png)
+
+
+
+
+
+1<div style="text-align: left;">
 <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 안녕하세요. 젤리빈입니다. </h2>
 <div style="font-weight: 700; font-size: 15px; text-align: left; color: #282d33;"> <li> 천재 </div>
 
