@@ -15,7 +15,10 @@
 <div style="text-align: left;">
 <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 안녕하세요. 젤리빈입니다. </h2>
 <div style="font-weight: 700; font-size: 15px; text-align: left; color: #282d33;">
-<li>  </div>
+  <li>[Back-end] 다희, 하늘 </div>
+  <li>[Front] 현욱 </div>
+  <li>[Full-stack] 동현 </div>
+  <li>[P.M] 소현 </div>
 
 ![jelly](https://github.com/SoDajang/Jelly_bean/assets/136549638/65f92957-b802-460f-9f56-ab9a060332a1)
 
