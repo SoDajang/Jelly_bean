@@ -17,16 +17,12 @@
 <div style="font-weight: 700; font-size: 15px; text-align: left; color: #282d33;">
 
 - `Backend` : 다희
-- `&color=timeAuto` : Proven random color, but is decided by time.
-- `&color=random` : Really random color. I don't know what colors are showing.
-- `&color=gradient` : Proven random gradient. List are [here](https://github.com/kyechan99/capsule-render/blob/master/src/gradient.json)
-- `&color=timeGradient` : Proven random gradient, but is decided by time.
-- `&color=_hexcode` : default(#B897FF)
-- `&color=_custom_gradient` : Custom gradient. If write as `&color=0:EEFF00,100:a82da8`,
-  <li>[Back-end] 다희, 하늘 </div>
-  <li>[Front] 현욱 </div>
-  <li>[Full-stack] 동현 </div>
-  <li>[P.M] 소현 </div>
+- `Front` : 지금 이거 할 떄가 아닌데
+- `FullStack` : 입력
+- `Guest` : 뀨
+- `Product Manager` : 소현
+- `bot` : default(#B897FF)
+
 
 ![jelly](https://github.com/SoDajang/Jelly_bean/assets/136549638/65f92957-b802-460f-9f56-ab9a060332a1)
 
