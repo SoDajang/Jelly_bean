@@ -12,6 +12,8 @@
 - `Product Manager` : 소현
 - `bot` : default(#B897FF)
 
+</br>
+
 # 웹사이트 구축
 > 천재교육 디지털러닝팀 공식 웹사이트 구축
 
