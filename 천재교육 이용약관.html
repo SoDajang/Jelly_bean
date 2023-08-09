@@ -1,0 +1,678 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>천재 IT 교육센터 이용약관 (필수항목)</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-interactiveBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="8cf71c6e-d5ed-4fc7-9bb8-81efe5f95a52" class="page sans"><header><h1 class="page-title"><strong>천재 IT 교육센터 이용약관 (필수항목)</strong></h1><p class="page-description"></p></header><div class="page-body"><p id="f00b1d03-5d3e-4344-bc36-e5f5916cd498" class=""><strong>천재 IT 교육센터 이용약관 (필수항목)</strong></p><ul id="98669dc4-806c-4593-a9af-a3186c808bc4" class="bulleted-list"><li style="list-style-type:disc">천재 IT 교육센터가 제공하는 서비스를 이용해주셔서 감사합니다. 서비스를 이용하시거나 회원으로 가입하실 경우 본 약관에 동의하시게 되므로, 잠시 시간을 내셔서 주의 깊게 살펴봐 주시기 바랍니다.</li></ul><ul id="39783128-0295-4a03-8468-9709ca2808c2" class="bulleted-list"><li style="list-style-type:disc">다음의 사항은 본 홈페이지를 사용하면서 회사와 이용자가 지켜야 할 약관의 내용이며 모든 이용자에게 해당됩니다.</li></ul><ul id="ac33eb8f-d384-4bc6-915d-96d6b67b3493" class="bulleted-list"><li style="list-style-type:disc"><strong>제 1 조 (목적)</strong><p id="9050cdcb-892c-4262-8eda-2d9ee5dd7b01" class="">본 약관은 천재 IT 교육센터가 운영하는 기밀문서 관리 프로그램인 천재 IT 교육센터에서 제공하는 서비스를 이용함에 있어 이용자의 권리, 의무 및 책임사항을 규정함을 목적으로 합니다.</p></li></ul><ul id="20cd468c-b909-491e-b728-c3e6eb54cfd1" class="bulleted-list"><li style="list-style-type:disc"><strong>제 2 조 (용어의 정의)</strong><p id="e609196f-b067-4652-85cc-5405e92d6d0e" class="">이 약관에서 사용하는 용어의 정의는 다음과 같습니다.</p><p id="9b6d5a70-a0c9-4364-94e9-301fcfc7cabd" class="">① 이 약관의 내용은 회원이 쉽게 알 수 있도록 회사가 제공하는 개별 서비스 또는 서비스 초기 화면에 게시하거나 기타의 방법으로 공지합니다.</p><p id="74541594-4b9a-4999-906e-c54db82abdf0" class="">② 회사는 필요하다고 인정되는 경우 관련법령을 위배하지 않는 범위 내에서 본 약관을 변경할 수 있으며, 회사가 약관을 변경할 경우에는 개정약관의 적용일자와 개정사유를 명시하여 현행약관과 함께 적용일자 7일 전부터 적용일자 전일까지 제1항의 방식에 따라 공지합니다. 다만, 개정 내용이 회원에게 불리한 경우 최소한 적용일자 30일 전에 공지합니다.</p><p id="19c8b962-a846-4b7f-a661-9c2655bc9b31" class="">③ 회사가 제2항에 따라 변경 약관을 공지 또는 통지하여 통지일로부터 개정약관 시행일 7일 후까지 회원이 약관 변경에 대한 거부의사를 표시하지 아니하면 회원이 변경 약관에 동의한 것으로 간주합니다.</p><p id="c73008e2-48bd-4d1f-b4f4-490c0528d2fe" class="">④ 회원은 변경된 약관 사항에 동의하지 않을 경우 서비스 이용을 중단하고 이용계약을 해지할 수 있습니다.</p><p id="ebbfbc93-af22-43c1-9d05-7af8c2d9e43f" class="">이 약관에서 사용하는 용어의 정의는 다음과 같습니다.</p><p id="9ed399b4-219c-4bcb-ac8d-9692796fe979" class="">&quot;서비스&quot;란 맞춤형 KDT 교육 프로그램을 제공하는 천재 IT 교육센터의 제반 서비스를 말합니다.</p><p id="f5a25a44-dc4e-4346-8e12-8cf3772b305a" class="">회사란 천재 IT 교육센터을 운영하는 천재 IT 교육센터를 말합니다.</p><p id="c72db010-0a73-4ed1-8fe1-fc029c117bc5" class="">이용자란 천재 IT 교육센터에 접속하여 본 약관에 따라 천재 IT 교육센터이 제공하는 서비스를 받는 회원 및 비회원을 말합니다.</p><p id="474f962c-4dc4-4c6e-bceb-346fac273d25" class="">&quot;회원&quot;이라 함은 천재 IT 교육센터에 회원등록을 한 자로서, 계속적으로 천재 IT 교육센터이 제공하는 서비스를 이용할 수 있는 자를 말합니다.</p><p id="b8a75ecd-b35d-4652-99e5-5fe770291f52" class="">&quot;비회원&quot;이라 함은 회원에 가입하지 않고 천재 IT 교육센터이 제공하는 제한된 서비스를 이용하는 자를 말합니다.</p><p id="c680b823-22b7-4352-a96e-62bfb8ec6c93" class="">&quot;이용계약&quot;&#x27;이라 함은 서비스 이용과 관련하여 회사와 이용자 간에 체결하는 계약을 말합니다.</p><p id="b5f7142f-2cd4-4394-89ca-a1d11b9973c4" class="">&quot;회원 ID&quot;라 함은 이용자의 식별과 이용자의 서비스 이용을 위하여 이용자가 선정하고 회사가 부여하는 문자와 숫자의 조합을 말합니다.</p><p id="2843a37d-c7bf-41fe-ac01-bb554573e581" class="">&quot;비밀번호&quot;라 함은 이용자가 부여받은 이용자번호와 일치된 이용자임을 확인하고 이용자의 권익보호를 위하여 이용자가 선정한 문자와 숫자의 조합을 말합니다.</p><p id="a10604d3-6776-4669-ab6a-8c94d6e22e30" class="">&quot;관리자(운영자)&quot;라 함은 서비스의 전반적인 관리와 원활한 운영을 위하여 회사에서 선정한 사람 혹은 기관(회사)를 말합니다.</p><p id="0847f5c8-ed9a-4087-9353-653da8d90eaa" class="">&quot;게시물&quot;이라 함은 회원이 서비스를 이용함에 있어 회사의 사이트에 게시한 문자, 부호, 음향, 화상, 동영상 등의 정보 형태의 글, 사진, 동영상 및 각 종 파일과 링크, 댓글 등의 정보를 말합니다.</p><p id="43e6d45b-1f73-408e-bd80-c37f25a77c1a" class="">이 약관에서 사용하는 용어의 정의는 제1항에서 정하는 것을 제외하고는 관계법령 및 서비스별 안내에서 정하는 바에 의합니다.</p></li></ul><ul id="28a023c8-20e4-4128-81d8-3aeadfccf3f1" class="bulleted-list"><li style="list-style-type:disc"><strong>제 3 조 (약관 등의 명시 및 개정)</strong></li></ul><p id="b1b8ec0c-7446-4570-9d95-cccfdf08bbb7" class="">천재 IT 교육센터은 본 약관의 내용과 상호 및 대표자 성명, 영업소 소재지 주소, 전화번호, 전자우편주소, 사업자등록증번호, 통신판매업 신고번호, 개인정보관리책임자 등을 이용자가 쉽게 알 수 있도록 천재 IT 교육센터의 사이트에 게시하고 있습니다.</p><p id="052fbc8e-2c6e-4e20-a7b0-034ffbecb59e" class="">천재 IT 교육센터은 「전자상거래 등에서의 소비자보호에 관한 법률」, 「약관의 규제에 관한 법률」, 「전자문서 및 전자거래기본법」, 「전자금융거래법」, 「전자서명법」, 「정보통신망 이용촉진 및 정보보호 등에 관한 법률」, 「방문판매 등에 관한 법률」, 「소비자기본법」 등 관련 법을 위배하지 않는 범위에서 본 약관을 개정할 수 있습니다.</p><p id="662bf70e-6a59-48da-b47f-7ccdc14f4182" class="">회사는 약관을 개정할 경우에는 적용일자 및 개정사유를 명시하여 현행약관과 함께 천재 IT 교육센터의 초기화면에 그 적용일자 7일 이전부터 적용일자 전일까지 공지합니다. 다만, 이용자에게 불리하게 약관내용을 변경하는 경우에는 최소한 30일 이상의 사전 유예기간을 두고 공지합니다. 이 경우 천재 IT 교육센터은 개정 전 내용과 개정 후 내용을 명확하게 비교하여 이용자가 알기 쉽도록 표시합니다.</p><p id="2391066f-b165-4dec-a420-ec5a8b6bac6e" class="">전항에 따른 개정 약관 중 변경 또는 개정한 내용이 고객에게 불리한 경우에는 회원은 언제든지 본 계약의 해지 및 회원탈퇴를 할 수 있으며, 이 경우 천재 IT 교육센터은 회원에게 불이익이 없도록 조치를 취해야 합니다.</p><p id="ee2a1db7-5819-4228-9ea7-6243ae5db0bc" class="">본 약관에서 정하지 아니한 사항과 본 약관의 해석에 관하여는 약관의 규제 등에 관한 법률, 공정거래위원회가 정하는 전자상거래 등에서의 소비자 보호지침 및 관계법령 또는 상관례에 따릅니다.</p><ul id="689cfbb6-5e3a-456c-a58c-86ef79df92e2" class="bulleted-list"><li style="list-style-type:disc"><strong>제 4 조 (약관 외 준칙)</strong></li></ul><p id="756a188f-90d5-41cd-9c8d-fc4834bbb8e5" class="">본 약관에 규정되지 않은 사항에 대해서는 관련법령 또는 회사가 정한 개별 서비스의 이용약관, 운영정책 및 규칙 등(이하 ‘세부지침’)의 규정에 따릅니다.</p><ul id="61327411-63e3-472e-9d33-b250b5e1a898" class="bulleted-list"><li style="list-style-type:disc"><strong>[제 2장 서비스 이용 계약]</strong></li></ul><ul id="6c2f8792-c028-42e0-8844-3468752ffd1a" class="bulleted-list"><li style="list-style-type:disc"><strong>제 5 조 (이용계약의 성립)</strong></li></ul><p id="e27b5a61-41ca-42a9-855e-9adbdfc05d05" class="">① 이용신청자가 본 약관을 읽고 ‘동의함’ 버튼을 누르거나 ‘확인’ 등에 체크하는 방법을 취한 경우 본 약관에 동의한 것으로 간주합니다.</p><p id="25dfd7b4-d880-4631-b732-b67294404450" class="">② 이용계약은 이용신청자가 제1항과 같이 동의한 후 회사가 정한 신청양식을 작성해 서비스의 이용을 신청한 후 회사가 이를 승낙함으로써 체결됩니다. 다만 회사가 필요하다고 인정하는 경우 회원에게 별도의 서류를 제출하도록 할 수 있습니다.</p><p id="6bb004b5-0402-4bd9-b790-2ec43d9ac180" class="">③ 제2항에 따른 신청에 있어 회사는 외부 제휴 업체를 통해 회원의 ‘본인인증’을 통해 본인 여부를 확인합니다.</p><p id="017c7c37-0dd3-4cba-8671-0760b8856cf2" class="">④ 모든 회원은 서비스 이용을 위해 필요한 개인정보를 허위로 제공하거나 타인의 정보를 도용 또는 무단으로 사용할 수 없습니다. 이를 위반할 경우 회원에게 제공되는 서비스 이용에 제한 또는 이용계약이 해지할 수 있으며 이용자는 관련 법에 따라 처벌을 받을 수 있습니다.</p><p id="6a455f71-1760-4447-8c18-8e2e76e37466" class="">⑤ 회사는 회원에 대하여 청소년 보호법’ 등에 따른 등급 및 연령 준수를 위해 이용 제한이나 등급별 제한을 할 수 있습니다.</p><ul id="0c4d0ba6-a53a-462a-a950-98f3b83ed2d5" class="bulleted-list"><li style="list-style-type:disc"><strong>제 6 조 (서비스 중단 및 이용제한)</strong></li></ul><p id="0595d599-fac5-4f20-bb0e-b85920b28d1c" class="">회사는 천재 IT 교육센터에서 제공하는 서비스의 품질을 향상시키기 위하여 설비의 보수, 교체, 정기점검, 공사 등 기타 이에 준하는 작업을 수행하기 위하여 서비스의 제공을 일시적으로 중단할 수 있습니다.</p><p id="3cdbdbb0-0cd1-4e74-b88e-d679a55b3d67" class="">회사는 예상하지 못한 사이버 해킹, 컴퓨터 바이러스의 공격을 감지하는 등 긴급한 사유가 발생하는 경우, 이용자의 계정을 보호하기 위하여 이용자 계정 및 관련 서비스의 제공을 일시적으로 중단할 수 있습니다.</p><p id="91aac746-f9d0-4ee4-ab62-03a068ba5db3" class="">회사는 이용자의 계정이 사이버 해킹 또는 컴퓨터 바이러스의 공격에 이용되고 있다고 판단할 상당한 이유가 있는 경우, 해당 계정에 대한 이용제한 조치를 할 수 있습니다. 이러한 조치에 대하여 이용자는 이의신청을 할 수 있고, 회원의 이의신청 사유가 정당하다고 인정되는 경우 회사는 즉시 회원의 서비스 이용을 재개하여야 합니다.</p><p id="459753f4-89e0-4098-9d69-a12d9a954129" class="">위 제1항부터 제3항의 사유로 인하여 이용자에게 손해가 발생하더라도 회사는 책임을 지지 않습니다. 다만, 회사의 고의 또는 중과실에 의한 경우에는 그러하지 아니합니다.</p><ul id="f91eccd7-6a00-42c0-b16d-0ceb6a639c13" class="bulleted-list"><li style="list-style-type:disc"><strong>제 7 조 (계약의 성립 및 회원가입)</strong></li></ul><ol type="1" id="a0bb93ab-0af0-4e64-8e89-473897b87105" class="numbered-list" start="1"><li>이용계약은 회원이 되고자 하는 자가 이 약관의 내용에 대하여 동의를 한 다음 천재 IT 교육센터가 정한 가입 양식에 따라 회원정보를 기입한 후 본 약관에 동의한다는 의사표시를 함으로써 회원가입 신청을 하고, 회사가 그 신청에 대하여 승낙함으로써 체결됩니다. 회사의 승낙의 의사표시는 웹사이트를 통해 이루어 집니다.</li></ol><ol type="1" id="ee3534fc-086e-4e9d-90d0-7af1cb06527e" class="numbered-list" start="2"><li>회원가입은 반드시 실명으로만 가입할 수 있으며 회사는 실명확인조치를 할 수 있습니다. 회원가입 승낙이 되었다가 이후에라도 회사가 실명으로 등록하지 않은 사실을 알게 될 경우, 이용자의 이용계약은 해지될 수 있습니다.</li></ol><ol type="1" id="7d6a435d-52cf-4d74-8e04-3a19ea911eff" class="numbered-list" start="3"><li>천재 IT 교육센터은 제1항과 같이 회원으로 가입할 것을 신청한 이용자 중 다음 각 호에 해당하지 않는 한 회원으로 등록합니다.</li></ol><ol type="1" id="ad9123b3-97a7-4630-a463-d147f2d1c5d6" class="numbered-list" start="4"><li>등록 내용에 허위, 기재누락, 오기가 있는 경우</li></ol><ol type="1" id="d433838d-e6e2-499f-acd2-cc988c0137fd" class="numbered-list" start="5"><li>기타 회원으로 등록하는 것이 천재 IT 교육센터의 기술상 현저히 지장이 있다고 판단되는 경우</li></ol><ol type="1" id="5bd5ce00-1cc4-437b-8ec9-66cc56f11a67" class="numbered-list" start="6"><li>경쟁업체 및 그 관련인이 가입 신청한 경우</li></ol><ol type="1" id="154b1cea-2e8e-4dc7-8eec-a2c2fd5b3b64" class="numbered-list" start="7"><li>회원은 회원가입 시 등록한 사항에 변경이 있는 경우, 상당한 기간 이내에 천재 IT 교육센터에 대하여 회원정보 수정 등의 방법으로 그 변경사항을 알려야 합니다.</li></ol><ul id="46417941-aea2-4eb5-9370-fd0e8f0e2bcd" class="bulleted-list"><li style="list-style-type:disc">제 8 조 (회원에 대한 통지)</li></ul><p id="c03d1f0a-2340-4eea-b801-e17d89fc62a0" class="">천재 IT 교육센터이 회원에 대한 통지를 하는 경우, 회원이 회원가입시 천재 IT 교육센터에게 제공한 전자우편 또는 전화번호 등으로 할 수 있습니다. 이용자가 원하지 않는 경우에는 수신을 거부할 수 있습니다.</p><p id="0cc19566-8841-4895-8040-ee666ff26657" class="">제1항의 방법 외에 법령에 따라 추가적인 조치가 필요한 경우에 회사는 그에 따릅니다.</p><ul id="c47c8819-b530-4244-a45f-bf4df62c8fef" class="bulleted-list"><li style="list-style-type:disc">제 9 조 (회원탈퇴 및 자격 상실 등)</li></ul><p id="311f5ae7-7d1c-49ca-832c-3a692ec49576" class="">회원은 천재 IT 교육센터에 언제든지 탈퇴를 요청할 수 있으며 천재 IT 교육센터은 즉시 회원탈퇴를 처리합니다.</p><p id="c3fb748b-4528-4e60-9d12-bb08fdeb0628" class="">회원이 다음 각 호의 사유에 해당하는 경우, 천재 IT 교육센터은 회원자격을 제한 및 정지시킬 수 있습니다.</p><ol type="1" id="67d2a0ec-962b-45e1-b911-98298921ccb3" class="numbered-list" start="1"><li>가입 신청 시에 허위 내용을 등록한 경우</li></ol><ol type="1" id="0ca2e809-b1c8-4f7f-9096-b01b5023663b" class="numbered-list" start="2"><li>천재 IT 교육센터을 이용하여 구입한 멤버십 서비스 등의 대금, 기타 회원이 부담하는 채무를 기일에 지급하지 않는 경우</li></ol><ol type="1" id="01b34f21-9b09-4e92-9522-1c8d9a045d8a" class="numbered-list" start="3"><li>다른 사람의 천재 IT 교육센터 이용을 방해하거나 그 정보를 도용하는 등 서비스 이용과 관련된 질서를 위협하는 경우</li></ol><ol type="1" id="ea3d6f0b-2eee-4ef3-bac3-95435caa0775" class="numbered-list" start="4"><li>천재 IT 교육센터을 이용하여 법령 또는 본 약관이 금지하거나 공서양속에 반하는 행위를 하는 경우</li></ol><ol type="1" id="4a144754-15b3-4392-bb9b-bc78c11924b4" class="numbered-list" start="5"><li>그 밖의 일반 사회 통념상 현저히 사회 상규에 부합하지 않은 행위를 한 경우</li></ol><ol type="1" id="70cd8640-0446-4794-9121-06475360a0f7" class="numbered-list" start="6"><li>두 명 이상이 한 계정으로 수강하는 행위등 계정을 공유하는 행위</li></ol><ol type="1" id="4e961afe-3ce1-4d99-ab37-c170d3c9c8b2" class="numbered-list" start="7"><li>천재 IT 교육센터이 회원 자격을 제한․정지시킨 후, 동일한 행위가 2회 이상 반복되거나 30일 이내에 그 사유가 시정되지 아니하는 경우 천재 IT 교육센터은 회원자격을 상실시킬 수 있습니다.</li></ol><p id="de058bca-792b-4812-adc3-a73b713aa88a" class="">천재 IT 교육센터이 회원자격을 상실시키는 경우에는 회원등록을 말소합니다. 이 경우 회원에게 이를 통지하고, 회원등록 말소 전에 최소한 30일 이상의 기간을 정하여 소명할 기회를 부여합니다.</p><ul id="be4afcf5-9073-4396-abe0-0dc9dc11144d" class="bulleted-list"><li style="list-style-type:disc"><strong>제 10 조 (회사의 의무)</strong></li></ul><p id="9efbb5b9-fde3-4ae3-94a1-78b547febe1c" class="">① 회사는 안정적인 서비스의 제공을 위하여 지속적으로 노력하며, 설비에 장애가 생기거나 멸실 된 때에는 지체 없이 이를 수리 복구하여야 합니다. 다만, 천재지변, 비상사태 또는 그 밖에 부득이한 경우에는 그 서비스를 일시 중단하거나 중지할 수 있습니다.</p><p id="0db8c7b8-70f0-4d72-8a8b-99703c081f16" class="">② 회사는 회원이 안전하게 서비스를 이용할 수 있도록 개인정보보호를 위한 보안 시스템을 갖추어야 하며, 유지ㆍ점검 또는 복구 등의 조치를 성실히 이행 합니다.</p><p id="8c8908f6-fb40-44e9-8169-4d86584c6896" class="">③ 회사는 회원으로부터 제기되는 불만이 정당하다고 인정할 경우에는 이를 즉시 처리함을 원칙으로 합니다. 다만, 즉시 처리가 곤란한 경우에는 회원에게 그 사유와 처리 일정을 통보합니다.</p><p id="e740ae15-ef5a-423d-8ee3-778949ce750f" class="">④ 회사는 회원이 수신 동의를 하지 않은 영리목적의 광고성 전자우편, SMS 문자메시지 등을 발송하지 아니합니다.</p><p id="d5d26795-6645-4c37-8b54-644c149fbfa7" class="">⑤ 회사가 제3자와의 서비스 제공계약 등을 체결하여 회원에게 서비스를 제공하는 경우 회사는 각 개별서비스에서 서비스의 제공을 위하여 제3자에게 제공되는 회원의 구체적인 회원정보를 명시하고 회원의 개별적이고 명시적인 동의를 받은 후 동의 범위 내에서 해당 서비스의 제공 기간 동안에 한하여 회원의 개인정보를 제3자와 공유하는 등 관련 법령을 준수합니다.</p><p id="021fb348-2f05-42dc-b356-8716cc10e3df" class="">⑥ 회사는 서비스 제공과 관련하여 알게 된 회원의 개인정보를 본인의 동의 없이 제3자에게 누설, 배포하지 않습니다. 단, 다음에 해당하는 사항에 대해서는 예외로 규정합니다.</p><p id="02491ea2-4589-4730-a7e2-574533e37518" class="">ㆍ이용자가 사전에 공개에 동의한 경우</p><p id="9c69847d-a320-4e1a-8cd8-0d153b46e2bc" class="">ㆍ법령의 규정에 의거하거나 수사 목적으로 법령에 정해진 절차와 방법에 따라 수사기관의 요구가 있는 경우</p><p id="28237a18-7182-44c0-ae28-b9aeeac89a27" class="">ㆍ이용자 또는 그 법정 대리인이 의사표시를 할 수 없는 상태에 있거나 주소불명 등으로 사전 동의를 받을 수 없는 경우로서 명백히 이용자 또는 제3자의 급박한 생명, 신체, 재산의 이익을 위하여 필요하다고 인정되는 경우</p><p id="674e074d-0e7b-499e-8f57-f00eed8fd12d" class="">ㆍ통계작성 및 학술연구 등의 목적을 위하여 필요한 경우로서 특정 개인을 알아볼 수 없는 형태로 개인정보를 제공하는 경우</p><ul id="4a147bea-7c03-4256-9866-52b0710d2c13" class="bulleted-list"><li style="list-style-type:disc"><strong>제 11 조 (개인정보보호)</strong></li></ul><ol type="1" id="59e4a651-11f3-44f1-958b-655e3ca308be" class="numbered-list" start="1"><li>회사는 관련 법령이 정하는 바에 따라 회원의 개인정보를 보호하기 위해 노력하며, 개인정보의 보호 및 사용에 대해서는 관련 법령 및 회사의 개인정보처리방침에 따릅니다.</li></ol><ol type="1" id="a7c2d6b4-e3ad-45f0-a217-18dfd3861047" class="numbered-list" start="2"><li>회사는 법령에 의해 국가기관 등의 요청이 있는 경우를 제외하고는 회원의 개인정보를 본인의 동의 없이 타인에게 제공하지 않습니다.</li></ol><ol type="1" id="b0707105-fafe-4b13-8b84-4b4bbd1df464" class="numbered-list" start="3"><li>회사는 회원의 귀책사유로 개인정보가 유출되어 발생한 피해에 대하여 책임을 지지 않습니다.</li></ol><ol type="1" id="7030356a-08be-4556-a520-99629c8e4e55" class="numbered-list" start="4"><li>이용자는 언제든지 천재 IT 교육센터가 가지고 있는 자신의 개인정보에 대해 열람 및 오류정정을 요구할 수 있으며 천재 IT 교육센터은 이에 대해 지체 없이 필요한 조치를 취할 의무를 집니다. 이용자가 오류의 정정을 요구한 경우에는 천재 IT 교육센터은 그 오류를 정정할 때까지 당해 개인정보를 이용하지 않습니다. 단, 이용자의 개인정보가 천재 IT 교육센터 서비스의 블록체인 시스템을 통해 보관될 경우에는 기술적인 원인으로 정정 또는 삭제를 할 수 없을 수 있습니다.</li></ol><ul id="797a1431-e412-4469-be7e-dcdf1fa50b56" class="bulleted-list"><li style="list-style-type:disc"><strong>제 12 조 (회사의 의무)</strong></li></ul><ol type="1" id="4d5af30a-469e-4aa9-a325-94186f7bfef7" class="numbered-list" start="1"><li>회사는 천재 IT 교육센터의 운영과 관련하여 법령과 본 약관이 금지하거나 공서양속에 반하는 행위를 하지 않으며 본 약관이 정하는 바에 따라 지속적이고, 안정적인 서비스를 제공하는데 최선을 다하여야 합니다.</li></ol><ol type="1" id="980f75ca-1ee6-4eff-8e12-f751681e3a5f" class="numbered-list" start="2"><li>회사는 이용자가 안전하게 천재 IT 교육센터 서비스를 이용할 수 있도록 이용자의 개인정보(신용정보 포함)보호를 위한 보안 시스템을 갖추어야 합니다.</li></ol><ol type="1" id="cb888c69-ab8d-4d8b-b826-2342d2a43242" class="numbered-list" start="3"><li>회사는 수신동의를 하지 않은 이용자에게 영리목적의 광고성 전자우편을 발송하지 않습니다. 다만, 회사는 회원에게 서비스 이용에 필요가 있다고 인정되는 각종 정보에 대해서 회원의 사전 동의를 받은 후 이메일, 문자 등의 방법으로 회원에게 제공할 수 있습니다.</li></ol><ul id="d1308b6d-3f53-46d1-b040-f3d04c19653b" class="bulleted-list"><li style="list-style-type:disc"><strong>제 13 조 (이용자의 의무)</strong></li></ul><ol type="1" id="77fd298f-96d2-44f1-a1c2-a543a89d0ab6" class="numbered-list" start="1"><li>이용자는 회원가입 신청 또는 회원정보 변경 시 실명으로 모든 사항을 사실에 근거하여 작성하여야 하며, 허위 또는 타인의 정보를 등록할 경우 일체의 권리를 주장할 수 없습니다.</li></ol><ol type="1" id="1d4be07a-6e7e-4f3a-91b9-10b1f8577cbd" class="numbered-list" start="2"><li>회원은 본 약관에서 규정하는 사항과 기타 회사가 정한 제반 규정, 공지사항 등 회사가 공지하는 사항 및 관계법령을 준수하여야 하며, 기타 회사의 업무에 방해가 되는 행위, 회사의 명예를 손상시키는 행위를 해서는 안 됩니다.</li></ol><ol type="1" id="43e4b2eb-70fd-4123-99f1-794ed6307f3d" class="numbered-list" start="3"><li>회원은 주소, 연락처, 전자우편 주소 등 이용계약사항이 변경된 경우에 해당 절차를 거쳐 이를 회사에 즉시 알려야 합니다.</li></ol><ol type="1" id="99f4da97-f540-4e3a-8bd3-2ae9d838e932" class="numbered-list" start="4"><li>회사가 관계법령 및 ‘개인정보 보호정책‘에 의거하여 그 책임을 지는 경우를 제외하고 회원에게 부여된 이메일 주소 및 비밀번호 관리소홀, 부정사용에 의하여 발생하는 모든 결과에 대한 책임은 회원에게 있습니다.</li></ol><ol type="1" id="0ffb687a-f6fb-40fa-90a4-6e8cc528e52a" class="numbered-list" start="5"><li>회원은 회사의 사전 승낙 없이 서비스를 이용하여 영업활동을 할 수 없으며, 그 영업활동의 결과에 대해 회사는 책임을 지지 않습니다. 또한 회원은 이와 같은 영업활동으로 회사가 손해를 입은 경우, 회원은 회사에 대해 손해배상의무를 지며, 회사는 해당 회원에 대해 서비스 이용제한 및 적법한 절차를 거쳐 손해배상 등을 청구할 수 있습니다.</li></ol><ol type="1" id="119988ce-ad25-4bcf-9827-4ec58889f4e2" class="numbered-list" start="6"><li>회원은 회사의 명시적 동의가 없는 한 서비스의 이용권한, 기타 이용계약상의 지위를 타인에게 양도, 증여할 수 없으며 이를 담보로 제공할 수 없습니다.</li></ol><ol type="1" id="801b545d-a6d8-4957-b26b-380fb27e714d" class="numbered-list" start="7"><li>회원은 회사 및 제 3자의 지적 재산권을 침해해서는 안 됩니다.</li></ol><p id="0598a189-012c-4fd1-b36a-69ede9c5119c" class="">회원은 다음 각 호에 해당하는 행위를 하여서는 안 되며, 해당 행위를 하는 경우에 회사는 회원의 서비스 이용제한 및 민형사상 적법 조치를 포함한 제재를 가할 수 있습니다.</p><ol type="1" id="9105496d-a159-41a6-a31b-3829eb6e6827" class="numbered-list" start="1"><li>허위의 개인정보를 기재하거나 중복하여 가입하는 행위</li></ol><ol type="1" id="6fe8f5c5-5052-44aa-89ea-34bc118b7024" class="numbered-list" start="2"><li>두 명 이상이 한 계정으로 수강하는 행위</li></ol><ol type="1" id="3a98602f-3cad-4588-b557-9aa96cb42727" class="numbered-list" start="3"><li>타인의 서비스 아이디 및 기타 정보를 도용하는 행위</li></ol><ol type="1" id="3af440c1-1004-4218-b4b6-84e33fcce6db" class="numbered-list" start="4"><li>회사의 운영진, 직원 또는 관계자를 사칭하는 행위</li></ol><ol type="1" id="9b4f5263-baf9-406f-93c4-896323a0a66e" class="numbered-list" start="5"><li>자신의 아이디 및 비밀번호를 유포하는 행위</li></ol><ol type="1" id="0b441503-1ce0-4bbc-809f-46574b6e3cbd" class="numbered-list" start="6"><li>회사 또는 타인의 지적재산권을 침해하는 행위</li></ol><ol type="1" id="4165ff87-50e3-4fa4-b8f8-88b940f28018" class="numbered-list" start="7"><li>타인의 명예를 훼손하거나 사생활을 침해하는 행위</li></ol><ol type="1" id="113921d2-2f98-41ec-b92a-26dd9a6ba0c2" class="numbered-list" start="8"><li>고의 또는 과실로 허위의 정보를 공개 또는 유포하는 행위</li></ol><ol type="1" id="122e874d-36cf-4aaf-b0df-719022e38d79" class="numbered-list" start="9"><li>다량의 정보를 전송하거나, 동일한 또는 유사한 내용의 정보를 반복적으로 게시하여 서비스의 안정적인 운영을 방해하는 행위</li></ol><ol type="1" id="70f55b57-c43f-4dfe-8d64-910a369b45cc" class="numbered-list" start="10"><li>천재 IT 교육센터의 서비스를 이용하여 얻은 정보를 천재 IT 교육센터의 사전 승낙 없이 복제 또는 유통시키거나 상업적으로 이용하거나 배포하는 행위</li></ol><ol type="1" id="32840143-f8ca-4691-a688-57391e58fd67" class="numbered-list" start="11"><li>서비스 이용 중 복제프로그램을 실행하는 경우 또는 녹화를 하거나 시도하는 경우</li></ol><ol type="1" id="ee64e323-22be-4b1a-9571-c5a105e148e5" class="numbered-list" start="12"><li>불법선거운동을 하는 행위</li></ol><ol type="1" id="5b0aa6c9-55f6-4f06-948a-d015b64f8e78" class="numbered-list" start="13"><li>회사로부터 특별한 권리를 부여받지 않고 회사의 클라이언트 프로그램을 변경하거나, 회사의 서버를 해킹하거나, 웹사이트 또는 게시된 정보의 일부분 또는 전체를 임의로 변경하는 행위</li></ol><ol type="1" id="5adf0da4-32e5-418e-be2e-f3621eeb828f" class="numbered-list" start="14"><li>공공질서 및 미풍양속에 위반되는 저속, 음란한 내용의 정보, 문장, 도형, 음향, 동영상을 서비스에 게시하는 행위</li></ol><ol type="1" id="5f659b02-0045-49aa-af62-11464ba632af" class="numbered-list" start="15"><li>모욕적이거나 개인 신상에 대한 내용이어서 타인의 명예나 사생활을 침해할 수 있는 내용을 서비스에 게시하는 행위</li></ol><ol type="1" id="32ad3361-35e2-404d-af87-18394bfec757" class="numbered-list" start="16"><li>다른 이용자를 희롱 또는 위협하거나, 특정 이용자에게 지속적으로 고통 또는 불편을 주는 행위</li></ol><ol type="1" id="ea93a06a-4e70-4ce2-b485-781c5b2f5312" class="numbered-list" start="17"><li>회사의 승인을 받지 않고 다른 사용자의 개인정보를 수집 또는 저장하는 행위</li></ol><ol type="1" id="fd405def-d531-4fe7-8b18-0a12c9b8cebe" class="numbered-list" start="18"><li>범죄와 결부된다고 객관적으로 판단되는 행위</li></ol><ol type="1" id="3793f750-bfed-4a00-91df-1a39133854a1" class="numbered-list" start="19"><li>본 약관을 포함하여 기타 회사가 정한 제반 규정 또는 이용 조건을 위반하는 행위</li></ol><ol type="1" id="759c1022-1749-4b19-b983-61b244eb2e42" class="numbered-list" start="20"><li>기타 관계법령에 위배되는 행위</li></ol><p id="aacb7eb3-8c97-488e-ad72-f4a0c20ff123" class="">회사는 다음 각 호에 해당하는 경우를 부정 이용 행위로 봅니다. 이와 같은 행위가 적발되는 경우 회사는 회원의 서비스 이용제한 및 적법 조치를 포함한 제재를 가할 수 있습니다.</p><ol type="1" id="5520e8ee-3ae5-4f4c-95ce-7c80827b1ce1" class="numbered-list" start="1"><li>동일한 ID로 2대 이상의 PC에서 동시접속이 발생하는 경우</li></ol><ol type="1" id="757f46dc-49c2-4354-b583-122d1dd88e60" class="numbered-list" start="2"><li>동일한 ID로 다수의 PC 또는 IP에서 서비스를 이용하는 경우</li></ol><ol type="1" id="59595f34-55b5-4414-8fca-8962bb1c2bc6" class="numbered-list" start="3"><li>자신의 ID 및 강좌 등의 서비스를 타인이 이용하도록 하는 경우</li></ol><ol type="1" id="78479985-48bd-4f79-ad1f-414fd4e7c311" class="numbered-list" start="4"><li>자신의 ID 및 강좌 등의 서비스를 타인에게 판매, 대여, 양도하는 행위 및 이를 광고하는 행위 회사는 전항에 따른 부정 이용자가 발견 되었을 경우, 다음 각 호에 따른 조치를 취할 수 있습니다.</li></ol><p id="cc41cf33-c0ee-4ab6-bfb0-732853c16e0d" class="">1차 발견 시: 전자우편, 쪽지, 팝업창 등의 방법으로 경고합니다. 회원은 회사에게 발견 사항이 발생한 데에 대한 정당한 사유 등을 제시할 수 있습니다.</p><p id="5fdb6ab3-5928-469f-a422-e9986f719be9" class="">2차 발견 시: 전자우편, 쪽지, 팝업창 등의 방법으로 경고하고 동시에 서비스 제공을 정지합니다. “재발방지확약ㆍ보증서“를 회사에 제출하는 경우에는 서비스 제공을 재개합니다.</p><p id="7b89add6-fd35-4aef-8395-aae902e52cfe" class="">3차 발견 시: 전자우편, 쪽지, 팝업창 등의 방법으로 3차 위반내용의 통지 및 서비스 제공을 정지하고 30일간의 소명기간 부여하며, 정당한 사유가 없는 경우 강제 탈퇴처리 합니다.</p><p id="9dcb5ab7-3113-4541-ae95-280581407f98" class=""><strong>제 14 조 (회원의 ID 및 비밀번호에 대한 의무)</strong></p><p id="2d861eac-3804-49b1-90b4-47388ad79140" class="">회사는 이용고객에 대하여 약관에 정하는 바에 따라 회원 ID를 부여합니다. 회원ID는 원칙적으로 변경이 불가하며 부득이한 사유로 인하여 변경 하고자 하는 경우에는 해당 ID를 해지하고 재가입해야 합니다.</p><p id="d65fe042-ef43-47f5-b752-4525b00a8732" class="">이용자ID는 다음 각 호에 해당하는 경우에는 이용고객 또는 회사의 요청으로 변경할 수 있습니다.</p><ol type="1" id="c03f1fc2-e0ed-438f-ae26-9859d5d7ee91" class="numbered-list" start="1"><li>이용자ID가 이용자의 전화번호 또는 주민등록번호 등으로 등록되어 사생활침해가 우려되는 경우</li></ol><ol type="1" id="9653356c-8ac8-4a36-b66e-e232d79466c9" class="numbered-list" start="2"><li>타인에게 혐오감을 주거나 미풍양속에 어긋나는 경우</li></ol><ol type="1" id="b091b89a-3657-474a-bc12-4d47fe5b2872" class="numbered-list" start="3"><li>기타 합리적인 사유가 있는 경우</li></ol><p id="2734c83e-8f2f-4206-bc48-06e202e51392" class="">회원의 ID와 비밀번호에 관한 관리책임은 회원에게 있습니다.</p><p id="9a298410-97a1-4c4f-b343-7ac64f235571" class="">회원은 자신의 ID 및 비밀번호를 제3자에게 이용하게 해서는 안 됩니다.</p><p id="b144ce18-37f0-4441-90d2-153e31f47350" class="">회원이 자신의 ID 및 비밀번호를 도난 당하거나 제3자가 사용하고 있음을 인지한 경우에는 바로 천재 IT 교육센터에 통보하고 천재 IT 교육센터의 안내가 있는 경우에는 그에 따라야 합니다.</p><ul id="6a122a5b-66f3-41ff-97ec-9ed28836c3f5" class="bulleted-list"><li style="list-style-type:disc"><strong>제 15 조 (저작권의 귀속)</strong></li></ul><p id="f3f19f5a-6c4c-4c5f-9d93-a890a9362c92" class="">천재 IT 교육센터이 작성한 저작물에 대한 저작권 기타 지적재산권은 천재 IT 교육센터에 귀속합니다.</p><p id="644cc0ec-f174-49c2-a676-4264e6546ae2" class="">이용자가 작성한 저작물에 대한 저작권 기타 지적재산권은 이용자에 귀속합니다. 단, 이용자가 서비스 내에 게시한 질문글 또는 답변글의 경우, 이용자는 회사에게 수정권한을 부여합니다. 회사가 이용자가 작성한 질문글 또는 답변글을 수정한 경우, 수정하였다는 사실과 그 수정 내용은 게시글에 표기됩니다.</p><p id="7336f06e-7e21-4b64-b2b6-118942186383" class="">이용자는 천재 IT 교육센터을 이용함으로써 얻은 정보 중 천재 IT 교육센터에게 지적재산권이 귀속된 정보를 천재 IT 교육센터의 사전 승낙 없이 복제, 송신, 출판, 배포, 방송 기타 방법에 의하여 영리목적으로 이용하거나 제3자에게 이용하게 하여서는 안됩니다.</p><p id="b2566ae5-ab34-42c5-8e96-93a2e6abde26" class="">이용자는 천재 IT 교육센터가 이용자에게 귀속된 저작물(예, 과제물)을 천재 IT 교육센터의 서비스 개선, 포트폴리오 및 홍보 등의 목적으로 사용할 수 있는 권한을 천재 IT 교육센터에 부여합니다.</p><ul id="7c12e2be-19c1-424d-a434-014c3638bde5" class="bulleted-list"><li style="list-style-type:disc"><strong>제 15 조 2 (게시물의 관리)</strong></li></ul><p id="228889df-ed7e-4c7c-8902-61d54201d7d7" class="">회사는 이용자가 서비스에 작성한 게시물 또는 내용물이 각호에 해당되는 경우 사전통지 없이 삭제하거나 비공개 처리할 수 있습니다.</p><ol type="1" id="28d95ea5-58e7-40fa-b367-b4409f8011d9" class="numbered-list" start="1"><li>회사나 기타 타인의 저작권 등 권리를 침해하는 내용인 경우</li></ol><ol type="1" id="ccc12cc6-1c60-49e8-990c-fd4c74c89744" class="numbered-list" start="2"><li>공공질서 및 미풍양속에 위반되는 내용을 유포하거나 링크하는 경우</li></ol><ol type="1" id="eed726f6-a661-4cc8-bbb3-474e1a04600c" class="numbered-list" start="3"><li>타인의 명예를 훼손하거나 불이익을 주는 경우</li></ol><ol type="1" id="9c63584a-693b-45ef-9823-f6c56352edf1" class="numbered-list" start="4"><li>회사에서 규정한 게시물 원칙에 어긋나거나, 커뮤니티의 성격에 부합하지 않는 게시물의 경우</li></ol><ol type="1" id="40939858-c08c-4104-a10a-c1c86b4e1aba" class="numbered-list" start="5"><li>영리를 목적으로 하는 광고인 경우</li></ol><ol type="1" id="526b57a5-a1dd-4128-bd6b-7eafa38061c5" class="numbered-list" start="6"><li>범죄행위에 결부된다고 인정되는 내용인 경우</li></ol><ol type="1" id="72e80cf9-43b5-497a-8f50-1df0b9fe747c" class="numbered-list" start="7"><li>기타의 방법으로 관계법령에 위배되거나 회사 운영에 지장을 초래하는 경우</li></ol><p id="6fc361f1-7c62-4718-afe2-d1d0bce5904d" class="">관리자는 본 약관 제 15 조 2 1항의 각 호에 규정한 내용으로 커뮤니티를 이용하거나 이에 해당하는 자료를 게재할 수 없도록 커뮤니티 게시물을 지속적으로 건전하게 관리합니다.</p><p id="31af3bb9-3642-4f69-a4a8-1c2ba90f00aa" class="">관리자는 게시물 내용의 올바른 이해와 오해 방지 및 건전한 커뮤니티 문화의 확산이라는 공공의 이익을 위해서 이용자가 작성한 게시물을 사전통지 없이 비공개 처리할 수 있습니다. 이용자는 이러한 회사의 조치에 대하여 이의제기를 할 수 있습니다.</p><ul id="8c686ece-c116-42de-97fc-8f5309fd0b0b" class="bulleted-list"><li style="list-style-type:disc"><strong>제 16 조 (계정의 양도금지)</strong></li></ul><p id="62bb6234-5c1f-4e8e-a6ed-f35821e9801a" class="">이용자는 천재 IT 교육센터에서 생성한 아이디 및 비밀번호, 계정 등을 회사의 사전 서면 동의 없이 제3자에게 양도할 수 없으며, 이를 위반할 경우 이용계약이 해지될 수 있습니다.</p><ul id="aac597d6-0fbd-471b-a572-900e96e72dea" class="bulleted-list"><li style="list-style-type:disc"><strong>제 17 조 (계약의 해지)</strong></li></ul><p id="ebf268a8-0881-4528-8a03-a23f0ec2b637" class="">회원이 이용계약을 해지하고자 하는 때에는 회원 본인이 회사에 해지신청을 함으로써 이용계약을 해지할 수 있습니다. 회사는 관련법령 등에서 정하는 바에 따라 이를 즉시 처리하여야 합니다.</p><p id="a4ccc698-2340-47ce-b56b-7192d29cb1da" class="">회사는 회원이 다음 각 호에 해당하는 행위를 하였을 경우 이용계약을 해지하거나 해당 회원의 계정 이용을 중단시키는 등 필요한 조치를 취할 수 있습니다.</p><ol type="1" id="1ca5833b-83eb-499d-9649-5bb5a8b9e687" class="numbered-list" start="1"><li>가입 신청시 허위 내용을 등록한 경우</li></ol><ol type="1" id="1bf346a4-959a-4deb-9d16-a4dc48013d2e" class="numbered-list" start="2"><li>멤버시 비용 기타 서비스 이용에 관련하여 회원이 부담하는 채무를 기일에 지급하지 않은 경우</li></ol><ol type="1" id="82389a3c-7cc6-46b1-b855-8feb2d98e5ae" class="numbered-list" start="3"><li>회원이 제8조 및 제13조의 금지행위를 한 경우</li></ol><ol type="1" id="c563a38c-e2be-4554-8b59-4cb24bbec920" class="numbered-list" start="4"><li>서비스 운영을 고의로 방해한 경우</li></ol><ol type="1" id="4df94b0b-b61a-4775-81b0-10d7bcbcce2f" class="numbered-list" start="5"><li>컴퓨터 바이러스 프로그램 등을 유포하는 경우</li></ol><ol type="1" id="c1adcfc6-382c-4d53-8ac2-c9b30af71fe5" class="numbered-list" start="6"><li>기타 본 약관이나 관련법규에 위배된다고 판단되는 경우</li></ol><p id="7743ffad-b75c-4ef4-92f3-b652cd0bf093" class="">이용계약을 해지할 경우, 관련법령 및 회사의 개인정보보호정책에서 정한 바에 따라 회사가 회원정보를 보유하는 경우를 제외하고는 해지 후 즉시 회원의 모든 데이터는 지체없이 파기됩니다.</p><ul id="adca645e-055a-43e6-b547-cd627321bcdd" class="bulleted-list"><li style="list-style-type:disc"><strong>제 18 조 (손해배상 및 책임의 한계)</strong></li></ul><p id="69c9781d-a7e6-475a-9602-3c3f633129c4" class="">회사 또는 이용자는 본 약관을 위반하여 상대방에게 손해를 입힌 경우에는 그 손해를 배상할 책임이 있습니다. 다만, 고의 또는 과실이 없는 경우에는 그러하지 아니 합니다.</p><p id="e0c958e4-1bda-4162-9107-76eb13f92675" class="">이용자는 천재 IT 교육센터의 사전 서면 동의 없이 서비스를 이용하여 영리적인 목적의 영업행위를 하여서는 안 됩니다. 이를 위반한 영업행의의 결과에 대하여 회사는 책임을 지지 않으며, 이와 같은 영업 행위의 결과로 회사에 손해가 발생한 경우 회원은 회사에 대하여 손해배상의 의무를 집니다.</p><p id="fa58be10-54cd-4f09-b5c9-47f8ddf16ed3" class="">회사는 천재지변 또는 이에 준하는 불가항력으로 인하여 서비스를 제공할 수 없는 경우에는 서비스 제공에 관하여 책임을 지지 않습니다.</p><p id="34ec3b20-e4b4-4608-9b2d-17e28972a812" class="">회사는 회원의 고의 또는 과실로 인한 서비스 이용의 장애에 대하여는 책임을 지지 않습니다. 다만, 회원에게 부득이하거나 정당한 사유가 있는 경우에는 그러하지 아니합니다.</p><p id="bd1a74a4-aa69-4072-9f94-773a9364044a" class="">회원이 서비스와 관련하여 게재한 정보나 자료 등의 신뢰성, 정확성 등에 대하여 회사는 고의 또는 중대한 과실이 없는 한 책임을 지지 않습니다.</p><p id="8733595b-2a16-422a-9da6-ec842acebbda" class="">회사는 회원이 다른 회원 또는 타인과 서비스를 매개로 발생한 거래나 분쟁에 대해 개입할 의무가 없으며, 이로 인한 손해에 대해 책임을 지지 않습니다.</p><p id="3757c9af-83c0-46b8-a7e4-24ee3d2e989b" class="">회사는 무료로 제공되는 서비스 이용과 관련하여 회원에게 발생한 손해에 대해서는 책임을 지지 않습니다. 그러나 회사의 고의 또는 중과실에 의한 경우에는 그러하지 아니합니다.</p><ul id="530e50d6-04cb-473b-93c0-69ced820f494" class="bulleted-list"><li style="list-style-type:disc"><strong>제 19 조 (분쟁해결)</strong></li></ul><p id="182004ec-5bb9-480f-8166-ac594880f66f" class="">회사는 이용자가 제기하는 정당한 의견이나 불만을 반영하고 그 피해를 보상하기 위하여 자체적인 피해보상처리 절차를 수립하고 운영합니다.</p><p id="d9aa1d3f-4d56-4228-91d1-9c8897cff439" class="">회사는 이용자로부터 제출되는 불만사항 및 의견은 우선적으로 그 사항을 처리합니다. 다만, 신속한 처리가 곤란한 경우에는 이용자에게 그 사유와 처리일정을 즉시 통보해 드립니다.</p><ul id="d0f5ef70-397f-44ed-9265-42c9931a2a0f" class="bulleted-list"><li style="list-style-type:disc"><strong>제 20 조 (준거법 및 관할)</strong></li></ul><p id="ce2a0822-bd26-4748-b507-4e0c20542b4e" class="">이 약관은 대한민국 법률에 따라 규율되고 해석됩니다.</p><p id="f2f12c5a-5855-4932-bc8e-d7bdcaee94f0" class="">회사와 회원 간에 발생한 분쟁으로 소송이 제기되는 경우에는 법령에 정한 절차에 따른 법원을 관할 법원으로 합니다.</p><p id="79bc037a-cb98-424e-9d87-d2b550df7a6e" class="">
+</p><p id="8e707bf0-ba9f-4115-a7fe-d728ea08e09a" class="">
+</p></div></article></body></html>
