@@ -1,0 +1,685 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>개인정보 수집, 이용 동의</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-interactiveBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="ac3f7394-0f3c-45c8-b7aa-704340f7d87c" class="page sans"><header><h1 class="page-title">개인정보 수집, 이용 동의</h1><p class="page-description"></p></header><div class="page-body"><p id="60fc74a7-fa6f-4a01-aa95-ecaf4cbcb2e6" class=""><strong>이용약관 시행일자 :2023.xx.xx.</strong></p><p id="0dd68ba1-3c47-4c21-85e0-ac270e1631f9" class=""><strong>개인정보 수집,이용 동의 (필수항목)</strong></p><p id="b71903a3-cbf9-46f1-934c-3c966e079aa9" class="">(주)천재 IT 교육센터(이하 천재 IT 교육센터)는 『정보통신망 이용 촉진 및 정보보호 등에 관한 법률』 및 『개인정보보호법』에 따라 고객님의 개인정보 보호 및 권익을 보호하고 개인정보와 관련한 고객님의 고충을 원활하게 처리할 수 있도록 다음과 같은 처리방침을 두고 있습니다. 본 방침은 2023년 8월 01일부터 시행됩니다.</p><p id="0fd373ec-2534-439e-89bc-8dc4ba9fe4f0" class=""><strong>1. 개인정보의 수집·이용목적</strong> 『개인정보』는 생존하는 개인에 관한 정보로서 해당 정보에 포함된, 성명, 주민등록번호 등의 사항으로 해당 개인을 식별할 수 있는 정보(해당 정보만으로는 특정 개인을 식별할 수 없더라도 다른 정보와 쉽게 결합하여 식별할 수 있는 것을 포함)을 말하며, 천재 IT 교육센터가 고객의 개인정보를 수집·이용하는 목적은 다음과 같습니다.</p><table id="5fcc0fe2-67e3-416f-b585-fdaa05933b3b" class="simple-table"><tbody><tr id="588ffe57-fa32-429c-b891-b5aa66b81275"><td id="Lgpx" class="" style="width:349px"><strong>목적</strong></td><td id="kV~=" class="" style="width:349px"><strong>내용</strong></td></tr><tr id="e441d426-8953-4837-84d1-9cf82c28e2bc"><td id="Lgpx" class="" style="width:349px">서비스 제공</td><td id="kV~=" class="" style="width:349px">KDT(K-Digital) 프로그램 신청, 강의실 예약 서비스 제공에 관한 계약의 이행 및 서비스 이용 이력 저장 등에 관련한 목적으로 개인정보를 처리합니다.</td></tr><tr id="8f8d05ae-3769-4389-a791-e8b8c8716cd0"><td id="Lgpx" class="" style="width:349px">마케팅 및 광고에의 활용</td><td id="kV~=" class="" style="width:349px">이벤트 정보 및 참여기회 제공, 광고성 정보 제공 등 마케팅 및 프로모션, 관계사 상품 소개, 접속빈도 파악 또는 학습생의 서비스 이용에 대한 통계 등을 목적으로 개인정보를 처리합니다.</td></tr></tbody></table><ol type="1" id="47ad06c6-4e1d-4d9e-b24d-a6b83a20150a" class="numbered-list" start="1"><li>개인정보의 수집 항목</li></ol><p id="d8ac7ff3-e5f8-47b9-9d77-c3dfb5c71817" class="">1) 천재 IT 교육센터는 본질적인 서비스 제공을 위한 『필수동의』와 고객 각각의 기호와 필요에 맞는 서비스를 제공하기 위한『선택동의』로 구분되어 다음의 정보를 수집/이용하고 있으며, 『선택동의』를 하지 않은 경우에도 서비스 이용 제한은 없습니다. 또한, 이용자의 기본적 인권 침해의 우려가 있는 민감한 개인정보(인종 및 민족, 사상 및 신조, 출신지 및 본적지, 정치적 성향 및 범죄기록, 건강상태 및 성생활 등)는 수집하지 않습니다.</p><table id="1587bd44-4d23-4957-99e0-e9141f86076e" class="simple-table"><tbody><tr id="042faa8a-a25a-41e3-8d1c-b7f35e05e2f8"><td id="Uw=z" class="" style="width:174.5px"><strong>개인정보
+유형</strong></td><td id="oO{b" class="" style="width:174.5px"><strong>개인정보 항목</strong></td><td id="LMSp" class="" style="width:174.5px"></td><td id="~fpE" class="" style="width:174.5px"><strong>수집방법</strong></td></tr><tr id="137e6d0e-1e02-4d01-84be-14e41fc6e95c"><td id="Uw=z" class="" style="width:174.5px">일반</td><td id="oO{b" class="" style="width:174.5px">필수</td><td id="LMSp" class="" style="width:174.5px">이름, 이메일 아이디, 비밀번호, 생년월일,  휴대전화번호, 가입유형(일반)</td><td id="~fpE" class="" style="width:174.5px">홈페이지
+(회원 가입
+및 정보수정)</td></tr><tr id="a23598b9-5600-40a1-a0ac-ee664255957f"><td id="Uw=z" class="" style="width:174.5px">직원</td><td id="oO{b" class="" style="width:174.5px">필수</td><td id="LMSp" class="" style="width:174.5px">이름, 이메일 아이디, 비밀번호, 생년월일,  휴대전화번호, 가입유형(직원)</td><td id="~fpE" class="" style="width:174.5px">홈페이지
+(회원 가입
+및 정보수정)</td></tr><tr id="86dce2ab-0e9b-4775-9659-a4fe5dee704a"><td id="Uw=z" class="" style="width:174.5px"></td><td id="oO{b" class="" style="width:174.5px">선택</td><td id="LMSp" class="" style="width:174.5px">직원코드</td><td id="~fpE" class="" style="width:174.5px"></td></tr><tr id="3e27e19b-70ec-4578-845c-24418c9af0f4"><td id="Uw=z" class="" style="width:174.5px">기타</td><td id="oO{b" class="" style="width:174.5px">자동생성정보</td><td id="LMSp" class="" style="width:174.5px">IP주소, 쿠키, 접속 일시, 기타 서비스 이용기록</td><td id="~fpE" class="" style="width:174.5px">홈페이지
+(자동수집)</td></tr><tr id="ae9b75b3-e07a-41d5-8ccb-00d9b99ce337"><td id="Uw=z" class="" style="width:174.5px"></td><td id="oO{b" class="" style="width:174.5px"></td><td id="LMSp" class="" style="width:174.5px">OS 종류 및 버전</td><td id="~fpE" class="" style="width:174.5px">티스푼 앱</td></tr></tbody></table><ol type="1" id="45eac5d4-a864-4020-88bf-306c38d464b5" class="numbered-list" start="1"><li>천재 IT 교육센터는 다음과 같은 방법으로 개인정보를 수집할 수 있으며 개인식별이 가능한 개인정보를 수집하는 경우에는 고객으로부터 동의를 받습니다. 고객이 동의 버튼을 클릭하거나, 내정보 수정 등을 통해 추가로 수집하는 개인정보를 기재한 후 저장할 경우 개인정보 수집에 동의한 것으로 봅니다. ① 홈페이지, 모바일앱, 서면, 팩스, 전화, 고객센터 문의하기, 이벤트 응모 ② 생성정보 수집 툴을 통한 자동 수집 3) 천재 IT 교육센터는 통계 작성, 과학적 연구, 공익적 기록보존 등을 위하여 개인정보를 가명처리하여 활용할 수 있습니다.</li></ol><ol type="1" id="4c5d23e0-eb65-47d7-ba43-b5f76baf7ffc" class="numbered-list" start="2"><li>개인정보의 보유 및 이용 기간</li></ol><p id="25e717c6-ee49-4289-94ef-a974b104c7b0" class="">1)천재 IT 교육센터는 아래와 같이 서비스 가입일로부터 제공하는 기간 동안에 한하여 고객님의 개인정보를 보유 및 이용하게 됩니다. 밀크T 탈퇴를 요청하거나 개인정보의 수집 및 이용에 대한 동의를 철회하는 경우, 수집·이용목적을 달성하거나 보유·이용기간이 종료한 경우, 사업폐지 등의 사유가 발생한 경우 당해 개인정보를 지체없이 파기합니다.</p><table id="c959c86b-3454-4875-bc1c-d46ae77c51ad" class="simple-table"><tbody><tr id="78f12772-1f9d-4893-8827-46aa4f2a2934"><td id="T\KD" class="" style="width:232.66666666666666px"><strong>개인정보 유형</strong></td><td id="X:A}" class="" style="width:232.66666666666666px"><strong>보유목적</strong></td><td id="x[Ir" class="" style="width:232.66666666666666px"><strong>보유기간</strong></td></tr><tr id="e6342775-d799-4b6a-ad11-67a7558109b0"><td id="T\KD" class="" style="width:232.66666666666666px">일반</td><td id="X:A}" class="" style="width:232.66666666666666px">이용자 식별 및 천재 IT 교육센터 서비스 제공, 서비스 이용에 대한 공지 및 상담 등</td><td id="x[Ir" class="" style="width:232.66666666666666px">탈퇴 후 지체없이 파기</td></tr><tr id="6bff51e2-011d-4b88-b225-22edf75ce1e7"><td id="T\KD" class="" style="width:232.66666666666666px">직원</td><td id="X:A}" class="" style="width:232.66666666666666px">이용자 식별 및 천재 IT 교육센터 서비스 제공, 서비스 이용에 대한 공지 및 상담 등</td><td id="x[Ir" class="" style="width:232.66666666666666px"></td></tr><tr id="f828c52e-5746-46a2-a211-b8ada1e61cbf"><td id="T\KD" class="" style="width:232.66666666666666px">결제정보</td><td id="X:A}" class="" style="width:232.66666666666666px">주문 상품의 결제 및 환불, 배송 등</td><td id="x[Ir" class="" style="width:232.66666666666666px">법정 의무 보관기간</td></tr><tr id="eada33b8-6ddc-41eb-92c1-350c7d06e22b"><td id="T\KD" class="" style="width:232.66666666666666px">자동생성정보</td><td id="X:A}" class="" style="width:232.66666666666666px">서비스 이용기록 및 통계분석, 부정이용 방지, 개인정보 침해사고 대비</td><td id="x[Ir" class="" style="width:232.66666666666666px">법정 의무 보관기간
+(쿠키는 브라우저 종료 시 또는 로그아웃 시 만료,
+앱 이용 시 수집정보는 앱 삭제 시 만료)</td></tr></tbody></table><p id="e53cfa18-fb7e-44a5-890b-8a00bcd33f3b" class="">2)단, 이용요금의 정산, 소송이나 분쟁 등 기타 필요한 경우를 대비하여 일정기간 보유하여야 할 필요가 있을 경우 개인정보는 일정기간 보유합니다.</p><p id="6a7d8bdf-0811-415b-aeda-cbc27f26200d" class="">3)또한 전자상거래 등에서 『소비자보호에 관한 법률』, 『신용정보의 이용 및 보호에 관한 법률』 등 관계법령에 따라 보존할 필요가 있는 경우 천재 IT 교육센터는 관계법령에서 정한 기간동안 고객정보를 보관합니다. 이 경우 천재 IT 교육센터는 보관하는 정보를 그 보관의 목적으로만 이용하며 보존기간은 다음과 같습니다.</p><table id="d205de6a-c1b4-434d-8737-6f6af9e2a10c" class="simple-table"><tbody><tr id="f90b81ed-752b-4611-aeed-8d0fbdc81a58"><td id="eYDy" class="" style="width:232.66666666666666px"><strong>관련법령</strong></td><td id="sUaC" class="" style="width:232.66666666666666px"><strong>보유항목</strong></td><td id="K{oZ" class="" style="width:232.66666666666666px"><strong>보유기간</strong></td></tr><tr id="7b27f84e-2b42-4cb7-a960-e3651217d4f9"><td id="eYDy" class="" style="width:232.66666666666666px">전자상거래 등에서의 소비자 보호에 관한 법률 및 동법 시행령</td><td id="sUaC" class="" style="width:232.66666666666666px">계약 또는 청약 철회에 관한 기록</td><td id="K{oZ" class="" style="width:232.66666666666666px">5년</td></tr><tr id="344d0f2a-e651-4ebf-a13c-4e03cad7b096"><td id="eYDy" class="" style="width:232.66666666666666px"></td><td id="sUaC" class="" style="width:232.66666666666666px">대금결제 및 재회 등의 공급에 관한 기록</td><td id="K{oZ" class="" style="width:232.66666666666666px">5년</td></tr><tr id="c3a4703f-1789-41c6-9598-fe5ba58409cd"><td id="eYDy" class="" style="width:232.66666666666666px"></td><td id="sUaC" class="" style="width:232.66666666666666px">소비자의 불만 또는 분쟁처리에 관한 기록</td><td id="K{oZ" class="" style="width:232.66666666666666px">3년</td></tr><tr id="b0db37ef-cb76-4a10-ae40-26a6b2e75df0"><td id="eYDy" class="" style="width:232.66666666666666px"></td><td id="sUaC" class="" style="width:232.66666666666666px">표시·광고에 관한 기록</td><td id="K{oZ" class="" style="width:232.66666666666666px">6개월</td></tr><tr id="1f5c0d07-790f-4827-890b-96b5156f0af6"><td id="eYDy" class="" style="width:232.66666666666666px">통신비밀보호법 및 동법 시행령</td><td id="sUaC" class="" style="width:232.66666666666666px">인터넷 로그기록, 접속지 추적자료</td><td id="K{oZ" class="" style="width:232.66666666666666px">3개월</td></tr></tbody></table><p id="610fd994-9427-4e92-a2c4-f18eea6c9a09" class="">※ 개인정보 유효 기간제에 따라 1년(고객이 별도로 요청한 경우 그 기간) 동안 서비스를 이용하지 않은 고객의 개인정보는 파기됩니다. <strong>4. 개인정보의 이용 및 제3자 제공</strong> 1) 천재 IT 교육센터는 원칙적으로 고객님의 개인정보를 “개인정보의 수집·이용목적”에서 명시한 범위 내에서 사용하며, 이 범위를 초과하여 이용하거나 타인 또는 제3자에게 제공하지 않습니다. 다만, 다음 사항은 예외로 합니다. ① 수사목적으로 관계법률에서 정한 절차와 방법에 따라 수사기관이 개인정보 제공을 요구하는 경우 ② 통계작성, 학술연구나 시장조사 등을 위하여 특정 개인을 식별할 수 없는 형태로 협력사나 연구단체 등에 제공하는 경우 ③ 기타 관계법률의 규정에 따른 요청이 있는 경우 ④ 영업의 양도·합병 등이 발생하는 경우 (사전 고지 및 동의 철회권 부여) 2) 그 밖에 고객님의 동의를 얻어 제3자에게 개인정보를 제공할 수 있으며, 현재 제공하고 있는 개인정보 현황은 다음과 같습니다. 고객님은 제3자 제공 동의를 거부하실 수 있으며, 동의 거부는 밀크T 가입과 서비스 사용에 영향을 미치지 않습니다.</p><table id="160fa50e-1d27-4aa4-b93e-2fd1e82653f7" class="simple-table"><tbody><tr id="7cfac899-cc15-4c82-8d19-7504ed63831c"><td id="z|&gt;k" class=""><strong>제공받는 자</strong></td><td id="{?;h" class=""><strong>제공목적</strong></td><td id="M^{T" class=""><strong>제공항목</strong></td><td id="fpyY" class=""><strong>보유 및 이용기간</strong></td></tr><tr id="6fd7363f-5324-4f9c-8f56-4078235d40bb"><td id="z|&gt;k" class="">(주)천재교육</td><td id="{?;h" class="">제휴사 웹사이트 로그인 및 제휴사가 제공하는 서비스 제공 및 광고성 정보 전송</td><td id="M^{T" class="">성명, 이메일, 생년월일, 전화번호</td><td id="fpyY" class="">회원탈퇴 또는 제휴사에서 제공 동의 철회 시까지</td></tr></tbody></table><ol type="1" id="cabfd3de-b94d-468d-b7d2-9be6d5a04de4" class="numbered-list" start="1"><li>개인정보처리 위탁</li></ol><p id="bb2287f7-fa5e-4b70-8d4c-5b194bedd451" class="">1) 천재 IT 교육센터는 기본적인 서비스 제공, 서비스 향상, 고객편의 제공 등 원활한 업무 수행을 위하여 다음과 같이 개인정보 처리 업무를 외부전문업체에 위탁하여 운영하고 있습니다.</p><table id="c5685164-49a3-4c45-b0ff-d3d8da5563fc" class="simple-table"><tbody><tr id="8d5af3be-e0fd-484e-85da-48dc29cbb131"><td id="d^PU" class="" style="width:349px"><strong>수탁기관명</strong></td><td id="F;|s" class="" style="width:349px"><strong>위탁업무내용</strong></td></tr><tr id="39936259-59b9-4e02-a332-8e041c8af56f"><td id="d^PU" class="" style="width:349px">CJ대한통운택배, 우체국, 채연로지스틱스</td><td id="F;|s" class="" style="width:349px">물품배송 또는 청구지 등 발송</td></tr><tr id="b6077fc6-c379-49f2-9d69-3d654bf84779"><td id="d^PU" class="" style="width:349px">토스페이먼츠</td><td id="F;|s" class="" style="width:349px">금융거래 본인 인증 및 금융 서비스</td></tr><tr id="943782cc-caee-43b3-9d9b-2674015bc4fd"><td id="d^PU" class="" style="width:349px">㈜새하컴즈</td><td id="F;|s" class="" style="width:349px">화상영어 서비스 학습자 식별</td></tr><tr id="e881e8b7-a9f2-4957-807f-3940df168ab0"><td id="d^PU" class="" style="width:349px">㈜CJ올리브네트웍스</td><td id="F;|s" class="" style="width:349px">문자메시지, 카카오 알림톡 발송</td></tr><tr id="2247be27-ca7f-4c3e-a199-49ade3350757"><td id="d^PU" class="" style="width:349px">㈜다우기술</td><td id="F;|s" class="" style="width:349px">모바일 상품권 등록 및 발송</td></tr><tr id="e550ed51-62ca-4b15-a1e4-ff64446bf75e"><td id="d^PU" class="" style="width:349px">나이스신용정보㈜</td><td id="F;|s" class="" style="width:349px">미납, 약정 해지 채권에 대한 수납관리 및 채권추심</td></tr><tr id="e002e0c4-a3f1-44f9-a45d-d99e4d22c40f"><td id="d^PU" class="" style="width:349px">Amazon Web Services Inc.</td><td id="F;|s" class="" style="width:349px">서비스 제공을 위한 인프라 및 데이터 관리</td></tr><tr id="fee104eb-4326-40c1-b13c-274a5d8cd9f3"><td id="d^PU" class="" style="width:349px">㈜날리지포인트</td><td id="F;|s" class="" style="width:349px">화상교육서비스 시스템 개발 및 운영, 학습자 식별</td></tr></tbody></table><p id="3a7aa17d-7b3e-46df-80cd-bdc8d4aef57a" class="">천재 IT 교육센터는 위탁계약 체결 시 『개인정보보호법』 제26조에 따라 위탁업무 수행목적 외 개인정보 처리금지, 기술적·관리적 보호조치, 재위탁 제한, 수탁자에 대한 관리·감독, 손해배상 등 책임에 관한 사항을 계약서 등 문서에 명시하고, 수탁자가 개인정보를 안전하게 처리하는지를 감독하고 있습니다. 3) 위탁업무의 내용이나 수탁자가 변경될 경우에는 지체없이 본 개인정보 처리방침을 통하여 공개하도록 하겠습니다.</p><p id="ef803280-d9fd-432d-bcba-f0b6e60f188c" class="">
+</p><p id="e287705f-dedd-4c17-ac74-7f29018ee520" class=""><strong>6. 고객 및 법정대리인의 권리, 의무 및 그 행사방법</strong></p><p id="e6c020b6-271a-47f7-b5db-8b4a8ece73ea" class="">1) 고객의 권리와 의무 ① 고객님의 개인정보를 최신의 상태로 정확하게 입력하여 불의의 사고를 예방해 주시기 바랍니다.부정확한 정보 입력으로 말미암아 발생하는 사고의 책임은 고객님께 있으며 타인의 정보를 무단으로 사용하는 등 허위정보를 입력하면 밀크T 서비스 이용 자격이 상실될 수 있습니다. ② 고객은 개인정보를 보호받을 권리와 함께 자신을 스스로를 보호하고 타인의 정보를 침해하지 않을 의무도 지니고 있습니다. 비밀번호(Password)를 포함한 고객님의 개인정보가 유출되지 않도록 조심하시고 게시물을 포함한 타인의 개인정보를 훼손하지 않도록 유의해 주십시오. 만약 이 같은 책임을 다하지 못하고 타인의 정보를 훼손할 때에는『정보통신망 이용촉진 및 정보보호 등에 관한 법률』등에 의해 처벌받을 수 있습니다. 2) 고객 및 법정대리인의 권리와 의무 행사방법 ① 고객 및 법정대리인은 본인확인 등의 절차를 거쳐 아래와 같은 방법으로 홈페이지, 전화를 통하여 언제든지 등록되어 있는 본인 혹은 만 14세 미만 아동의 개인정보를 조회하거나 수정, 가입 해지(동의철회), 삭제를 요청할 수 있으며, 천재 IT 교육센터는 이에 대하여 지체없이 조치를 취하겠습니다. -조회 및 수정 : 로그인 후 마이페이지 &gt; 정보 수정 -가입 해지(동의철회), 삭제 : 로그인 후 마이페이지 &gt; 탈퇴 -마케팅 정보 수신 동의철회 : 로그인 후 마이페이지 &gt; 정보 수정 ② 천재 IT 교육센터 웹 또는 앱을 통해 직접 확인하지 못하는 정보는 고객센터(1522-6002(아이), 1577-1533(초등), 1522-5533(중학/고등)), 1:1 상담 게시판 또는 『9. 개인정보보호책임자 및 담당자』 의 민원처리 담당부서에 요청하여 확인할 수 있습니다. ③ 개인정보의 오류에 대한 정정을 요청하신 경우에는 정정을 완료하기 전까지 당해 개인정보를 이용 또는 제공하지 않습니다. ④ 잘못된 개인정보를 제3자에게 이미 제공한 경우에는 정정 처리결과를 제3자에게 지체없이 통지하여 정정이 이루어지도록 하겠습니다. ⑤ 천재 IT 교육센터와 위탁업체, 혹은 동의 하에 제공한 제3자가 보유하였다가 삭제한 개인정보는 『3. 개인정보의 보유 및 이용기간』에 명시된 바에 따라 처리하고 그 외의 용도로 열람 또는 이용할 수 없도록 처리하고 있습니다. <strong>7. 개인정보의 파기</strong> 천재 IT 교육센터는 수집한 개인정보의 이용목적이 달성된 후에는 보관기간과 이용기간에 따라 해당 정보를 바로 파기하며 파기절차, 시점 및 방법은 다음과 같습니다. ①파기절차 및 시점 고객이 서비스 가입 등을 위해 기재한 개인정보는 서비스 해지 등 이용목적이 달성되고 나면 내부방침과 기타 관련 법령의 정보보호 사유(『3. 개인정보의 보유 및 이용기간』 참조)에 따른 보유 기간이 지난 후에 삭제되거나 파기합니다. 일반적으로 채권-채무 관계가 남아 있지 않는 경우 밀크T 가입 시 수집되어 전자적 파일형태로 관리하는 개인정보는 탈퇴 시점에 바로 삭제됩니다. ② 파기 방법 종이에 출력된 개인정보는 분쇄기로 분쇄 또는 소각을 통하여 파기하고, 전자적 파일형태로 저장된 개인정보는 기록을 복구·재생할 수 없는 기술적 방법을 사용하여 완전하게 삭제합니다.</p><ol type="1" id="47d20376-d365-4f20-9f15-23d8d30a80a0" class="numbered-list" start="1"><li>개인정보의 안전성 확보 조치</li></ol><p id="4d0c24a2-0d9c-434e-bab6-4870efe493bd" class="">천재 IT 교육센터는 이용자의 개인정보의 안전성 확보를 위해 다음과 같이 관리적, 기술적, 물리적 조치를 취하고 있습니다.</p><table id="6697096c-029e-4b6f-bd21-eade5390f694" class="simple-table"><tbody><tr id="982941e8-d754-400c-b83d-27ad5c9590f1"><td id="y\K_" class="" style="width:349px"><strong>조치</strong></td><td id=":Lso" class="" style="width:349px"><strong>내용</strong></td></tr><tr id="621d6cf3-72be-4f9b-acfe-faab9cd8a324"><td id="y\K_" class="" style="width:349px">개인정보 취급 직원의 최소화 및 교육</td><td id=":Lso" class="" style="width:349px">개인정보를 취급하는 직원을 지정하고 담당자에 한정시켜 최소화 하여 개인정보를 관리하는 대책을 시행하고 있습니다.</td></tr><tr id="8fc2f5ee-bdd8-426f-88b8-e6160f32171f"><td id="y\K_" class="" style="width:349px">정기적인 자체 감사 실시</td><td id=":Lso" class="" style="width:349px">개인정보 취급 관련 안정성 확보를 위해 정기적으로 자체 감사를 실시하고 있습니다.</td></tr><tr id="1ead120c-ab69-401e-be15-dae4fb99f9c8"><td id="y\K_" class="" style="width:349px">내부관리계획의 수립 및 시행</td><td id=":Lso" class="" style="width:349px">개인정보의 안전한 처리를 위하여 내부관리계획을 수립하고 시행하고 있습니다.</td></tr><tr id="53ac2946-eeda-4735-a17a-f241c2c80ffe"><td id="y\K_" class="" style="width:349px">개인정보의 암호화</td><td id=":Lso" class="" style="width:349px">고객님의 개인정보 비밀번호는 일방향 암호화 되어 저장 및 관리되고 있어, 개인정보의 확인 및 변경은 비밀번호를 알고 있는 본인에 의해서만 가능합니다. 중요한 데이터는 파일 및 전송 데이터를 암호화 하거나 파일 잠금 기능을 사용하는 등의 별도 보안기능을 사용하고 있습니다.</td></tr><tr id="dbff2de2-ecf8-4a05-95f7-234efecdfc19"><td id="y\K_" class="" style="width:349px">해킹 등에 대비한 기술적 대책</td><td id=":Lso" class="" style="width:349px">천재 IT 교육센터는 해킹이나 컴퓨터 바이러스 등에 의한 개인정보 유출 및 훼손을 막기 위하여 보안프로그램을 설치하고 주기적인 갱신·점검을 하며 외부로부터 접근이 통제된 구역에 시스템을 설치하고 기술적/물리적으로 감시 및 차단하고 있습니다.</td></tr><tr id="c99efeee-06bd-4b05-922a-e7c7d1157075"><td id="y\K_" class="" style="width:349px">개인정보에 대한 접근 제한</td><td id=":Lso" class="" style="width:349px">개인정보를 처리하는 데이터베이스시스템에 대한 접근권한의 부여, 변경, 말소를 통하여 개인정보에 대한 접근통제를 위하여 필요한 조치를 하고 있으며 침입차단시스템을 이용하여 외부로부터의 무단 접근을 통제하고 있습니다.</td></tr><tr id="2bfee097-9992-456c-8e22-d232fe404389"><td id="y\K_" class="" style="width:349px">접속기록의 보관 및 위·변조 방지</td><td id=":Lso" class="" style="width:349px">개인정보처리시스템에 접속한 기록을 2년이상 보관, 관리하고 있으며, 접속 기록이 위·변조 및 도난, 분실되지 않도록 보안기능을 사용하고 있습니다.</td></tr><tr id="4b6c4516-a769-4b36-80a1-71a198cbef5c"><td id="y\K_" class="" style="width:349px">문서보안을 위한 잠금장치 사용</td><td id=":Lso" class="" style="width:349px">개인정보가 포함된 서류, 보조저장매체 등을 잠금장치가 있는 안전한 장소에 보관하고 있습니다.</td></tr><tr id="2432a01b-37b0-401f-bb49-77c9618a8950"><td id="y\K_" class="" style="width:349px">비인가자에 대한 출입 통제</td><td id=":Lso" class="" style="width:349px">개인정보를 보관하고 있는 물리적 보관 장소를 별도로 두고 이에 대해 출입통제 절차를 수립, 운영하고 있습니다.</td></tr></tbody></table><ol type="1" id="54401366-afcd-40f4-aeb0-77be836a3c53" class="numbered-list" start="1"><li>개인정보보호책임자및 담당자</li></ol><p id="4ee02d7a-6c00-4265-9261-bf73bd001aa4" class="">1) 천재 IT 교육센터는 이용자의 개인정보 관련 문의사항 및 불만 처리, 피해구제 등을 위하여 아래와 같이 개인정보 보호책임자 및 담당부서를 지정하고 있습니다. 2) 개인정보 관련 문의사항 및 불만, 열람, 정정 등의 민원이 있으신 경우 아래에 있는 연락처로 연락 주시기 바랍니다.</p><table id="b35cb4cf-dc61-4bee-b12d-c40cea21a630" class="simple-table"><tbody><tr id="5fa51b2a-3e0e-4960-9470-62d03c8d9272"><td id="g=&lt;T" class="" style="width:232.66666666666666px"><strong>구분</strong></td><td id="=QZA" class="" style="width:232.66666666666666px"><strong>개인정보보호책임자</strong></td><td id="PVEj" class="" style="width:232.66666666666666px"><strong>개인정보 민원처리 담당부서</strong></td></tr><tr id="2b25913c-99c4-4ea6-b3d6-0753e0fe6eff"><td id="g=&lt;T" class="" style="width:232.66666666666666px">담당부서</td><td id="=QZA" class="" style="width:232.66666666666666px">IT기술부문</td><td id="PVEj" class="" style="width:232.66666666666666px">IT기술부문 정보보안팀</td></tr><tr id="7e32ef62-1950-4dae-83c2-127a3db710a8"><td id="g=&lt;T" class="" style="width:232.66666666666666px">성명</td><td id="=QZA" class="" style="width:232.66666666666666px">김동일</td><td id="PVEj" class="" style="width:232.66666666666666px"></td></tr><tr id="ba785895-c728-4c9a-b444-a12f6127869e"><td id="g=&lt;T" class="" style="width:232.66666666666666px">전화번호</td><td id="=QZA" class="" style="width:232.66666666666666px">1577-1533</td><td id="PVEj" class="" style="width:232.66666666666666px">1577-1533</td></tr><tr id="1f13f77e-b170-4bd2-ab79-8ed7c53a78dc"><td id="g=&lt;T" class="" style="width:232.66666666666666px">이메일주소</td><td id="=QZA" class="" style="width:232.66666666666666px"><a href="mailto:privacy@chunjae.co.kr">privacy@chunjae.co.kr</a></td><td id="PVEj" class="" style="width:232.66666666666666px"><a href="mailto:privacy@chunjae.co.kr">privacy@chunjae.co.kr</a></td></tr></tbody></table><p id="107a5663-1633-47bf-b6e5-22517cd12e41" class=""><strong>10. 개인정보 처리방침의 고지 또는 통지방법</strong> 1) 천재 IT 교육센터는 고객이 동의한 범위를 넘어 고객의 개인정보를 이용하거나 제3자에게 제공하기 위해 고객에게서 추가적인 동의를 얻고자 할 때에는 미리 고객에게 개별적으로 서면, 이메일주소, 전화 등으로 해당사항을 알립니다. 2) 타인에게 고객의 개인정보의 수집·보관·처리·이용·제공·관리·파기 등을 위탁할 때에는 그 사실을 가입화면, 서비스이용약관, 홈페이지 의 개인정보처리방침 등을 통하여 그 사실을 고객에게 고지하고 알리고 동의를 얻습니다. 3) 천재 IT 교육센터는 영업의 전부 또는 일부를 양도하거나 합병·상속 등으로 그 권리와 의무를 이전할 때에는 서면 또는 이메일주소 등을 통하여 고객에게 개별적으로 알리는 동시에 해당 사실을 홈페이지 첫 화면에서 식별할 수 있도록 표기하고 30일 이상 그 사실을 공지합니다. <strong>11. 권익침해 구제방법</strong> 개인정보주체는 개인정보침해로 인한 구제를 받기 위하여 개인정보분쟁조정위원회, 한국인터넷진흥원 개인정보침해신고 센터 등에 분쟁해결이나 상담 등을 신청할 수 있습니다. 이 밖에 기타 개인정보침해의 신고 및 상담에 대하여는 아래의 기관에 문의하시기를 바랍니다.</p><table id="320d7dd2-4e33-41e7-ba66-eaadec6f73f5" class="simple-table"><tbody><tr id="6d5b9dbc-9a26-4eb8-9134-a6dacaaf2fbf"><td id="pOSq" class="" style="width:232.66666666666666px"><strong>기관명</strong></td><td id="FF[s" class="" style="width:232.66666666666666px"><strong>홈페이지</strong></td><td id="^L_D" class="" style="width:232.66666666666666px"><strong>연락처</strong></td></tr><tr id="7e8c88c7-8142-4cda-bcd7-9e9e371537c0"><td id="pOSq" class="" style="width:232.66666666666666px">개인정보침해신고센터</td><td id="FF[s" class="" style="width:232.66666666666666px"><a href="http://privacy.kisa.or.kr/">privacy.kisa.or.kr</a></td><td id="^L_D" class="" style="width:232.66666666666666px">(국번없이)118</td></tr><tr id="1b206533-0f40-4fc0-906a-875824efde3d"><td id="pOSq" class="" style="width:232.66666666666666px">개인정보분쟁조정위원회</td><td id="FF[s" class="" style="width:232.66666666666666px"><a href="http://www.kopico.go.kr/">www.kopico.go.kr</a></td><td id="^L_D" class="" style="width:232.66666666666666px">1833-6972</td></tr><tr id="1fb101c3-d194-4997-a3d4-68061b0779d9"><td id="pOSq" class="" style="width:232.66666666666666px">경찰청 사이버수사국</td><td id="FF[s" class="" style="width:232.66666666666666px"><a href="http://cyberbureau.police.go.kr/">cyberbureau.police.go.kr</a></td><td id="^L_D" class="" style="width:232.66666666666666px">(국번없이)182</td></tr><tr id="93163267-cf76-44e5-8c19-c784d0c68ead"><td id="pOSq" class="" style="width:232.66666666666666px">대검찰청 사이버수사과</td><td id="FF[s" class="" style="width:232.66666666666666px"><a href="http://www.spo.go.kr/">http://www.spo.go.kr</a></td><td id="^L_D" class="" style="width:232.66666666666666px">(국번없이)1301</td></tr></tbody></table><p id="641aa3d8-5b6b-4b40-89ef-3a22fe7dd31e" class=""><strong>12. 개인정보 자동수집 장치의 설치, 운영 및 그 거부에 관한 사항</strong> 1)천재 IT 교육센터는 제공하는 서비스를 통하여 고객의 정보를 저장하고 수시로 찾아내는 쿠키(cookie)를 운용합니다. 쿠키란 웹 서버가 웹 브라우저에 보내어 저장했다가 서버의 부가적인 요청이 있을 때 다시 서버로 보내주는 문자열 정보를 말합니다. 고객이 천재 IT 교육센터 웹사이트에 접속하면 천재 IT 교육센터는 고객의 브라우저에 있는 쿠키의 내용을 읽고, 추가정보를 찾아 접속에 따른 성명 등의 추가 입력 없이 고객에게 서비스를 제공할 수 있습니다. 2)쿠키(cookie)는 웹사이트를 운영하는데 이용되는 서버(http)가 이용자의 컴퓨터 브라우저에게 보내는 소량의 정보이며 이용자들의 PC 컴퓨터내의 하드디스크에 저장되기도 합니다.쿠키(cookie)를 통해 수집한 고객의 정보는 다음의 목적을 위해 사용될 수 있으며, 쿠키 설정 거부 방법은 다음과 같습니다. ①쿠키 등 사용 목적 고객이 방문한 각 서비스와 웹 사이트들에 대한 방문 및 이용형태, 인기 검색어, 보안접속 여부 등을 파악하여 이용자에게 최적화된 정보 제공을 위해 사용됩니다. ②쿠키 설정 거부 방법 가. 고객은 쿠키 설치에 대한 선택권을 가지고 있습니다. 따라서, 웹 브라우저에서 옵션을 설정함으로써 모든 쿠키를 허용하거나, 쿠키가 저장될 때마다 확인을 거치거나, 아니면 모든 쿠키의 저장을 거부할 수 있습니다 나. 설정방법 예시 - Chrome : 설정 메뉴 &gt; 고급 설정 표시 선택 &gt; 개인정보-콘텐츠 설정 &gt; 쿠키 수준 설정 - firefox : 옵션 메뉴 &gt; 개인정보 &gt; 방문기록-사용자 정의 설정 &gt; 쿠키 수준 설정 - safari : 환경설정 메뉴 &gt; 개인정보 탭 &gt; 쿠키 및 웹 사이트 데이터 수준 설정 3) 천재 IT 교육센터는 다음과 같이 온라인 맞춤형 광고사업자가 행태정보를 수집하도록 허용하고 있습니다.</p></div></article></body></html>
