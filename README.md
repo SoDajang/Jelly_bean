@@ -12,8 +12,7 @@
 
 ## Getting Started
 
-<img src="![image](https://github.com/SoDajang/Jelly_bean/assets/136549638/5d321bff-3be5-4700-acd7-2dfc870c8e86)
-" alt="이미지 설명" width="300" height="200">
+<img src="![image](https://github.com/SoDajang/Jelly_bean/assets/136549638/5d321bff-3be5-4700-acd7-2dfc870c8e86)" width="300" height="200">
 First, run the development server:
 
 ```bash
