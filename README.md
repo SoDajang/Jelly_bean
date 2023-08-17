@@ -10,10 +10,6 @@
 | 고현욱 | 프론트엔드 |
 | 김동현 | 프론트엔드 |
 
-
-
-<div style="font-weight: 700; font-size: 15px; text-align: left; color: #282d33;"> <li> 천재 </div>
-</div>
 <div style="text-align: left;">
 <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 🛠️ Tech Stacks </h2> <br>
 <div style="margin: ; text-align: left;" "text-align: left;"> <img src="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=Figma&logoColor=white">
